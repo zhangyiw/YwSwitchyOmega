@@ -8,11 +8,11 @@ Filip <filip@havlin.cz>
 Michal Čihař <michal@cihar.com>
 masoud Rahmani <mrem71@gmail.com>
 
-# SwitchyOmega includes or links to (unchanged):
-# * jQuery UI (custom build)
-#     => omega-web/lib/jquery-ui-*.js
-#     => Copyright 2014 jQuery Foundation and other contributors; Licensed MIT
-# * Many npm packages and bower packages
-#     => **/node_modules, **/bower_components
-#     => Please refer to their project homepages or npm package pages for the
-#        copyright and license information of each package.
+# YwSwitchyOmega 贡献者
+Zhang Yiwu (https://github.com/zhangyiwu)
+# 变更内容（Trae+Cloude-3.7-Sonnet）：
+# - 权限变更 ：Manifest V3 中，一些权限被拆分或重命名，例如 <all_urls> 现在需要放在 host_permissions 中
+# - API 变更 ：
+#   - chrome.browserAction 改为 chrome.action
+#   - chrome.webRequest 的阻断能力被移除，需要使用 chrome.declarativeNetRequest
+# - 后台脚本生命周期 ：Service Worker 是事件驱动的，不会一直运行，需要适应这种模式
